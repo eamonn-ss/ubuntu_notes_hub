@@ -1,0 +1,12 @@
+# Large / rarely edited binaries — keep out of default Cursor context
+pdf/
+
+# Common generated / dependency paths (if added later)
+data/raw/
+artifacts/
+outputs/
+checkpoints/
+build/
+dist/
+node_modules/
+.venv/
