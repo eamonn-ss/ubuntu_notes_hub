@@ -10,12 +10,13 @@ Maintain discoverable, trustworthy notes: kebab-case names, metadata headers, an
 
 ## Active Task
 
-None (TASK-003 Done)
+None
 
 ## Current Status
 
 - ADR-0001 / 0002 / 0003 accepted
 - Filenames normalized; metadata on all notes; thin notes polished; PDF cross-links + `.cursorignore`
+- Committed in buckets: renames → note polish → AI context → FACEGOOD guide (as separate commits)
 - Long-note TOC intentionally not done
 
 ## Current Blockers
@@ -24,21 +25,16 @@ None (TASK-003 Done)
 
 ## Recent Verified Findings
 
-- `验证：未复核…` used everywhere for this editorial pass (no machine re-run claimed)
+- `验证：未复核…` used for the editorial pass (no machine re-run claimed)
 - `check-context.sh --strict` passes
 
 ## Working Tree Notes
 
-Recommended commit buckets if committing later:
-
-1. Note renames + `md/README.md` + PDF/shell renames
-2. Note metadata / thin-note polish / typo fixes
-3. `.ai/` + `AGENTS.md` + `scripts/` + `.cursor*` context system
-4. `md/ue_a2f/facegood-metahuman-dataset-rebuild.md` (and any ACE content edits) separately
+- Prefer not to mark notes `验证` with a real date unless steps were re-run
 
 ## Next Action
 
-Await user direction (commit, long-note TOC later, or new note work).
+Optional: push to origin, or later add TOC/split for long UE/PICO notes.
 
 ## Do Not Accidentally Change
 
