@@ -1,5 +1,10 @@
 # PICO 遥操机器人项目搭建流程
 
+> 环境：PICO + Unity 遥操
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[unity-hub-editor-install-linux.md](unity-hub-editor-install-linux.md)
+
+
 ## 一、Unity 项目搭建
 
 ### 1. 安装 Unity Editor

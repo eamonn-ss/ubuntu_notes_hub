@@ -1,5 +1,10 @@
 # ros分布式通信
 
+> 环境：ROS 1/2 分布式通信
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[ros2-package-and-commands.md](ros2-package-and-commands.md)
+
+
 ## 分布式通信架构
 
 - 两台设备之间可以使用 ROS（包括 ROS1 和 ROS2）进行话题的接收与发送通信。这是 ROS 的一个核心功能 —— 分布式通信架构
@@ -10,7 +15,7 @@
     2. 配置环境变量：ROS_DOMAIN_ID 或 ROS_NAMESPACE（可选），ROS2 默认使用 DDS（Data Distribution Service），所以网络发现依赖 multicast。通常不需要手动配置主机地址，只需设置：`export ROS_DOMAIN_ID=0  # 两台设备设置为一样的值即可`
     3. 关闭防火墙（或开放必要端口）。Ubuntu 系统默认可能开启 ufw，你可以：`sudo ufw disable`，或者开放特定端口组。
     4. eg：
-    
+
         设备 A（发送话题）:`ros2 topic pub /chatter std_msgs/String "data: Hello from A" `
 
         设备 B（接收话题）:`ros2 topic echo /chatter`
@@ -38,7 +43,6 @@
     ROS_LOCALHOST_ONLY=0：虽看似关闭，但依然是“被设置了”，Fast DDS 会识别这个变量为“显式配置”，仍可能导致通信异常
 
     正确做法是：完全取消这个变量的设置
-
 
 
 - 检查脚本

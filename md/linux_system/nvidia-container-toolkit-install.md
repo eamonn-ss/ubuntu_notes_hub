@@ -1,5 +1,10 @@
 # 安装nvidia-container-toolkit
 
+> 环境：Ubuntu + Docker + NVIDIA GPU
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[../docker/docker-install-ubuntu.md](../docker/docker-install-ubuntu.md)
+
+
 ## [官方教程链接](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 
 ## nvidia-container-toolkit 是什么？

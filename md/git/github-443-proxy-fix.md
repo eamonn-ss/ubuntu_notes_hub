@@ -1,5 +1,10 @@
 # 解决Git连接失败：Failed to connect to github.com port 443 after 2125 ms: Couldn't connect to server
 
+> 环境：Git + HTTP(S) 代理 / GitHub
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[git-beginner-tutorial.md](git-beginner-tutorial.md)
+
+
 ## 背景分析
 
 当你在使用Git与GitHub交互时，可能会遇到这样的错误信息：“Failed to connect to github.com port 443 after 2125 ms: Couldn't connect to server”。这通常发生在使用VPN后，系统端口号与Git端口号不一致时。

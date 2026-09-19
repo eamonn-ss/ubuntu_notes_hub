@@ -1,4 +1,9 @@
 # 手动升级 libstdc++（推荐）
+
+> 环境：Ubuntu + GCC 11 / libstdc++
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[../../shell/fix-opencv-glibcxx-error.md](../../shell/fix-opencv-glibcxx-error.md)
+
 ## 由于 APT 找不到 libstdc++-11-dev，我们可以 手动下载并安装 GCC 11，从而获取 libstdc++.so.6 的更新版本。
 1. 步骤 1：更新 APT 并安装 GCC
     ```

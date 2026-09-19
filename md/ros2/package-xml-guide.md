@@ -1,5 +1,10 @@
 # package.xml
 
+> 环境：ROS 2 package.xml
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[ros2-package-and-commands.md](ros2-package-and-commands.md)
+
+
 ROS 2（以及 ROS 1）中每个包的元信息文件，它告诉构建系统（ament / colcon）——这个包是谁、依赖谁、怎么安装、怎么发布。
 
 ## 基本结构
@@ -189,4 +194,3 @@ ROS 2（以及 ROS 1）中每个包的元信息文件，它告诉构建系统（
 | `<member_of_group>`                    | 当前包属于某个依赖组    | 在 `package.xml` 根级 |
 | `<export>`                             | 可与 group 标签共存 | 用于导出构建类型或插件信息      |
 | `<group_depend>` 与 `<member_of_group>` | 名称必须一致        | 否则不会被解析为同一组        |
-

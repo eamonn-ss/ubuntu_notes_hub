@@ -1,4 +1,9 @@
-# docerk指令
+# Docker 指令
+
+> 环境：Docker CLI（通用）
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[docker-install-ubuntu.md](docker-install-ubuntu.md)
+
 
 ## 镜像
 | 特性          | 镜像（Image）           | 容器（Container）                   |
@@ -293,9 +298,6 @@ Dockerfile 是一个用来构建镜像的文本文件，文本内容包含了一
     `ARG SECRET_TOKEN, RUN git clone https://example.com/repo --token=${SECRET_TOKEN}`
 
 
-
-
-
 - docker build 是根据 Dockerfile 的指令，一层一层构建出一个完整的 Docker 镜像，`docker build [OPTIONS] PATH | URL | -`,PATH：指向 Dockerfile 所在目录（通常是 . 当前目录）, URL：可用 Git 地址作为构建上下文, -：从标准输入读取 Dockerfile 内容（不常用）
 
     常用参数：
@@ -325,7 +327,6 @@ Dockerfile 是一个用来构建镜像的文本文件，文本内容包含了一
     6. 指定平台（跨平台构建）,`docker build --platform linux/arm64 -t armapp .`，当你在 AMD/x86 平台（比如 Intel/AMD 电脑）用 docker build 构建镜像时，这个镜像默认是为 linux/amd64 构建的。`docker buildx create --use`，`docker buildx build --platform linux/arm64 -t myimage:arm64 .`,这样你就会在 x86 机器上构建出一个适用于 ARM64 架构的镜像。
 
 
-
 - 默认构建时只识别当前目录下的 Dockerfile，`docker build -t myapp .`,如果你的文件名不是 Dockerfile，可以手动指定：`docker build -f MyDockerfile.txt -t myapp .`
 - 如果你要创建多个 Dockerfile（例如不同环境），可以命名为：`Dockerfile.dev, Dockerfile.prod, Dockerfile.conda`,然后分别用 -f 构建`docker build -f Dockerfile.prod -t myapp:prod .`
 
@@ -343,4 +344,4 @@ Dockerfile 是一个用来构建镜像的文本文件，文本内容包含了一
     | `stop`   | 停止运行的服务容器                 | 暂停运行不清除容器           |
     | `restart`| 重启容器                           | 容器重启，镜像不变           |
     | `logs`   | 查看服务日志                       | 跟 `docker logs` 类似        |
-    | `ps`     | 查看服务状态                       | 哪些容器正在跑               |    
+    | `ps`     | 查看服务状态                       | 哪些容器正在跑               |

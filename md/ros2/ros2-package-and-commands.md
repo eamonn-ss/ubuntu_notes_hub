@@ -1,5 +1,10 @@
 # 功能包
 
+> 环境：ROS 2
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[colcon-basics.md](colcon-basics.md) · [package-xml-guide.md](package-xml-guide.md)
+
+
 ## 功能包（Package） 是构建系统的最小单元，通常包含实现某一功能的代码、配置和资源文件。
 
     功能包（package）就是 ROS 2 中用于封装某一功能模块的目录结构，它可以包含：

@@ -1,4 +1,8 @@
-## systemd
+# systemd
+
+> 环境：Linux systemd（通用）
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+
 
 - systemd = 管理系统（system）的后台守护进程（d），核心就是 Linux 系统的「后台总管家」。
 

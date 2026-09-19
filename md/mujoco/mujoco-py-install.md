@@ -1,9 +1,14 @@
 # mujoco安装教程
 
+> 环境：MuJoCo 210 + mujoco-py + Python 3.8
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[../../shell/install-opencv.sh](../../shell/install-opencv.sh)
+
+
 ## 安装mujoco
 
 1. Mujoco 是闭源软件，安装前需要去官网下载许可证以及安装包。从官网下载mujoco210安装文件
-2. 创建一个隐藏的文件夹，`mkdir ~/.nujoco`
+2. 创建一个隐藏的文件夹，`mkdir ~/.mujoco`
 3. 找到创建的隐藏文件夹
 4. 缩包所在位置（一般在下载目录下）在终端打开，输入以下命令将压缩包解压到.mujoco文件夹中：`tar -zxvf mujoco210-linux-x86_64.tar.gz -C ~/.mujoco`
 5. 获取许可文件mjket.txt,许可文件下载[链接](https://www.roboti.us/license.html),并将下载的mjkey.txt文件拷贝到.mujoco文件夹和.mujoco\mujoco200\bin文件夹下即可。
@@ -88,8 +93,7 @@
    ```
 6. 报错：GlfwError: Failed to create GLFW window，可能是现没有使用 NVIDIA 显卡的问题
     检查当前 PRIME 模式:`prime-select query`,如果返回 intel，说明系统正在使用 Intel 集显。如果返回 nvidia，说明系统应该使用 NVIDIA 显卡，但可能配置有问题。切换到 NVIDIA 模式:`sudo prime-select nvidia`,然后重启机器。
-   
+
 7. libGL error: MESA-LOADER: failed to open irislibGL error: MESA-LOADER: failed to open iris,这个报错只有一条，下面还有好几条libGL error，出现这种情况很可能是核显和独显同时使用了，在ubuntu下解决方案是：
     - 确定自己安装了NVIDIA的显卡驱动，可在终端输入nvidia-smi，可以查看是否有输出信息，如有则表明安装了
     - 终端输入nvidia-settings，弹出nvidia settings设置窗口，点击左侧的最后一项PRIME Profiles，选择nvidia（performance mode），然后重启。
-

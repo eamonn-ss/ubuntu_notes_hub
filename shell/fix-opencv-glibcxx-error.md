@@ -1,3 +1,10 @@
+# fix opencv glibcxx error
+
+> 环境：Conda/Python OpenCV + libstdc++/GLIBCXX
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[../md/linux_system/upgrade-libstdcxx-gcc11.md](../md/linux_system/upgrade-libstdcxx-gcc11.md) · [install-opencv.sh](install-opencv.sh)
+
+
 在虚拟环境中安装opencv要确保numpy已安装。
 
 You've successfully installed OpenCV '4.5.5' on your PC
@@ -36,5 +43,3 @@ sudo rm /home/ss/miniconda3/envs/mujoco/lib/libstdc++.so.6
 ls -l /home/ss/miniconda3/envs/mujoco/lib/libstdc++.so.6
 
 strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
-
-

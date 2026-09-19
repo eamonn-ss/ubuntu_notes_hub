@@ -1,5 +1,10 @@
 # 安装docker
 
+> 环境：Ubuntu + Docker
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[docker-commands-cheatsheet.md](docker-commands-cheatsheet.md)
+
+
 ## 参考`https://dockerdocs.xuanyuan.me/install/ubuntu`
 
 ## 使用官方安装脚本自动安装
@@ -146,4 +151,3 @@ sudo sh test-docker.sh
 - 检查是否还有 Docker 相关的软件：`dpkg -l | grep docker`
 
 - Shell 可能仍然缓存了 docker 的旧路径，可以执行以下命令来更新：`hash -r`
-

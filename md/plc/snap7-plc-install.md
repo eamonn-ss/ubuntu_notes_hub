@@ -1,5 +1,9 @@
 # snap7(plc)
 
+> 环境：Linux + Snap7 1.4.2
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+
+
 ## 安装步骤
 
 1. 登录[Snap官网](https://snap7.sourceforge.net/)，找到download，选择1.4.2下载7z包。
@@ -8,7 +12,7 @@
 
 3. 在linux下：
 
-    ```pyhton
+    ```bash
     sudo apt update
     sudo apt install build-essential cmake git python3-dev
     cd snap7-full-1.4.2/build/unix
@@ -30,7 +34,7 @@
 
 4. 安装共享库到系统路径并刷新缓存
 
-    ```python
+    ```bash
     sudo cp /实际路径/到/libsnap7.so /usr/local/lib/
     cd /usr/local/lib/
     sudo ln -sf libsnap7.so libsnap7.so.1

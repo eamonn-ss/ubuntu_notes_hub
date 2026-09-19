@@ -1,5 +1,10 @@
 # colcon
 
+> 环境：ROS 2 + colcon
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[ros2-package-and-commands.md](ros2-package-and-commands.md)
+
+
 ## colcon 是什么？
 
 1. colcon 是 ROS 2 官方推荐的 工作空间构建与任务管理工具。它的全称是 “COllective CONstruction”，意思是“集体构建”。它会自动识别、按依赖顺序构建 src/ 下所有包。

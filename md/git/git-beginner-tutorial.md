@@ -1,5 +1,10 @@
 # git入门教程
 
+> 环境：Git（通用）
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[github-443-proxy-fix.md](github-443-proxy-fix.md) · [../../pdf/git-reference.pdf](../../pdf/git-reference.pdf)
+
+
 ## git安装
 
 - 登录官网：`https://git-scm.com/`
@@ -118,4 +123,3 @@
     - 在仓库根目录中添加 .gitattributes 文件,内容如下"* text=auto"
     - 提交 .gitattributes 文件,"git add .gitattributes, git commit -m "添加 .gitattributes 文件以标准化行结束符"
     - 重新标准化文件,"git add --renormalize . , git commit -m "标准化行结束符""
-

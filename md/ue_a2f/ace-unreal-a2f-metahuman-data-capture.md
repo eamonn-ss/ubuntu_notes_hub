@@ -1,5 +1,10 @@
 # NVIDIA ACE Unreal Plugin：Audio2Face-3D 与 MetaHuman 数据采集指南
 
+> 环境：Unreal Engine 5.6.x + NVIDIA ACE Audio2Face-3D + MetaHuman
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[facegood-metahuman-dataset-rebuild.md](facegood-metahuman-dataset-rebuild.md)
+
+
 ## 1. 文档说明
 
 本文记录在 **Unreal Engine 5.6.x** 中配置 NVIDIA ACE Audio2Face-3D、驱动 MetaHuman，并通过自定义 C++ 组件同步采集以下数据的完整流程：
@@ -48,6 +53,8 @@ MetaHuman Creator Core Data
 - MSVC C++ 编译工具；
 - .NET SDK；
 - Unreal Engine 相关工具。
+
+可参考 UE 开发手册中的 [Setting Up Visual Studio](https://dev.epicgames.com/documentation/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine)
 
 ## 2.3 安装 NVIDIA ACE Unreal Plugin
 
@@ -847,7 +854,6 @@ CSV 第 N 行 ↔ frame_00000N.png
 ![示例图片](https://i.postimg.cc/qRq72fjd/81.png)
 ![示例图片](https://i.postimg.cc/26y5np2D/82.png)
 ![示例图片](https://i.postimg.cc/B6bv2WM3/83.png)
-
 
 
 ## 11.3 最终 BluePrint 连接方式如下图

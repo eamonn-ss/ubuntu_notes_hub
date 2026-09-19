@@ -1,12 +1,17 @@
 # 流程如下
 
+> 环境：Ubuntu + fishros + cuDNN
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[../../pdf/linux-cuda.pdf](../../pdf/linux-cuda.pdf)
+
+
 - `wget http://fishros.com/install -O fishros && . fishros`
 - `sudo apt update`,`sudo apt upgrade`
 - `dpkg -l | grep ssh`
 - `sudo apt-get install openssh-server`
 - `dpkg -l | grep ssh`
 - `ps -e | grep ssh`
-  
+
 - `conda deactivate`
 - `sudo apt install build-essential`
 - `sudo sh cuda_11.8.0_520.61.05_linux.run`
@@ -50,4 +55,3 @@ cd $HOME/cudnn_samples_v9/mnistCUDNN
 make clean
 make
 ./mnistCUDNN
-

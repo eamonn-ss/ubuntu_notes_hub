@@ -1,5 +1,9 @@
 # ubuntu安装海康工业相机MVS
 
+> 环境：Ubuntu + 海康 MVS
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+
+
 1. 安装MVS客户端+SDK
 
 - 进入海康机器人官网 [海康机器人下载中心](https://www.hikrobotics.com/cn/machinevision/service/download/?module=0)，下载 MVS 软件。

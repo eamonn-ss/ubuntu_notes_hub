@@ -1,5 +1,10 @@
 # Unity Hub 与 Unity Editor 安装指导书（Ubuntu/Linux）
 
+> 环境：Ubuntu/Linux + Unity Hub/Editor
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[pico-teleop-robot-setup.md](pico-teleop-robot-setup.md)
+
+
 ## 1. 基本概念说明
 
 在安装 Unity 前，需要先区分两个概念：

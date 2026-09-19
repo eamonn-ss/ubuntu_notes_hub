@@ -1,4 +1,9 @@
-## Docker 构建阶段的网络访问路径
+# Docker 构建阶段的网络访问路径
+
+> 环境：Docker build + 宿主机代理/VPN
+> 验证：未复核（2026-09-19 仅做仓库整理，未在本机重跑步骤）
+> 相关：[docker-install-ubuntu.md](docker-install-ubuntu.md)
+
 
 - 宿主机能翻墙 ≠ Docker 构建阶段一定能走 VPN
 
@@ -102,4 +107,3 @@ Failed to connect to github.com port 443 after 132422 ms: Connection timed out`�
         && git clone https://github.com/andrewbest-tri/vcstool.git -b andrewbest/delay \
         && echo 'source /opt/ros/humble/vcstool/setup.sh' | tee --append /etc/bash.bashrc
     ```
-
